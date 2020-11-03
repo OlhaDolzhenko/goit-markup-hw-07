@@ -4,27 +4,21 @@
   line-height: 1.167;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-light-theme-color);
-}
+  color: $title-light-theme-color;
 
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--title-dark-theme-color);
-  margin-bottom: 30px;
-}
+  &-hero {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $title-dark-theme-color;
+    margin-bottom: 30px;
+  }
 
-.activities .title {
-  margin-bottom: 50px;
-}
-
-.masters .title {
-  margin-bottom: 50px;
-}
-
-.clients .title {
-  margin-bottom: 50px;
+  .activities &,
+  .masters &,
+  .clients & {
+    margin-bottom: 50px;
+  }
 }
