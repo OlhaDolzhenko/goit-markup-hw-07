@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -92,12 +92,8 @@
                 </svg></div>
                 <label for="comment" class="contact-form-label">Комментарий</label>
                 <textarea name="comment" id="comment" class="contact-form-comment" placeholder="Введите текст"></textarea>
-                <div class="contact-form-policy-wrapper">
-                <input type="checkbox" name="policy" value="accept-policy" class="contact-form-policy visually-hidden" id="policy" />
-                <svg width="16" height="15" class="contact-form-policy-checked">
-                  <use href="./images/svg/sprite.svg#icon-check"></use>
-                </svg>
-                <label for="policy" class="contact-form-policy-label">Соглашаюсь с рассылкой и принимаю <a href="" class="modal-link">Условия договора</a></label></div>
+                <div class="contact-form-policy-wrapper">                
+                <label class="contact-form-policy-label"><input type="checkbox" name="policy" value="accept-policy" class="contact-form-policy visually-hidden" /><span class="contact-form-policy-text">Соглашаюсь с рассылкой и принимаю <a href="" class="modal-link">Условия договора</a></span></label></div>
                 <button type="submit" class="button">Отправить</button>
               </form>
               <button type="button" class="close-btn" data-modal-close><svg class="close-btn-svg">
